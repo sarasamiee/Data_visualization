@@ -1,5 +1,5 @@
 // Load the cleaned data
-d3.csv("../clean_data/stacked_bar_chart.csv").then(function(data) {
+d3.csv("clean_data/stacked_bar_chart.csv").then(function(data) {
 
     // Set dimensions and margins
     const margin = {top: 20, right: 30, bottom: 90, left: 60};

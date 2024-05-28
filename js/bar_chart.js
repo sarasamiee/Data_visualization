@@ -13,7 +13,7 @@ const svg = d3.select("#bar-chart")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // Parse the Data
-d3.csv("../clean_data/barchart_data.csv").then(data => {
+d3.csv("clean_data/barchart_data.csv").then(data => {
 
     // Add Y axis
     const y = d3.scaleBand()

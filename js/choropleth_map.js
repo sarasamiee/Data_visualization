@@ -36,7 +36,7 @@ svg.call(zoom);
 d3.json("europ.geojson").then(function(geojson) {
 
     // Load the NEET rates data
-    d3.csv("../clean_data/choropleth_data.csv").then(function(data) {
+    d3.csv("clean_data/choropleth_data.csv").then(function(data) {
 
         // Create a map from country name to NEET rate
         const rateById = {};

@@ -12,7 +12,7 @@ const svg = d3.select("#line-chart")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // load the Data
-d3.csv("../clean_data/linechart_data.csv").then(data2 => {
+d3.csv("clean_data/linechart_data.csv").then(data2 => {
 
     // Format the data
     data2.forEach(d => {

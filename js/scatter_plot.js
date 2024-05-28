@@ -31,7 +31,7 @@ const tooltip = d3.select("body").append("div")
     .style("padding", "10px");
 
 // Load the data
-d3.csv("../clean_data/scatterplot_data.csv").then(function(data) {
+d3.csv("clean_data/scatterplot_data.csv").then(function(data) {
   
 
   data.forEach(d => {
