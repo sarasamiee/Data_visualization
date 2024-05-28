@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Bar Chart: NEET Rates by Sex</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-purple-600 text-white p-4">
+        <h1 class="text-center text-3xl font-bold">Stacked Bar Chart: NEET Rates by Sex</h1>
+    </header>
+    <nav class="bg-purple-400 text-white p-2">
+        <ul class="flex space-x-4 justify-center">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="bar_chart.html" class="hover:underline">Bar Chart</a></li>
+            <li><a href="line_chart.html" class="hover:underline">Line Chart</a></li>
+            <li><a href="choropleth_map.html" class="hover:underline">Choropleth Map</a></li>
+            <li><a href="scatter_plot.html" class="hover:underline">Scatter Plot</a></li>
+        </ul>
+    </nav>
+    <main class="p-4">
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-2xl font-bold mb-4">NEET Rates by Sex</h2>
+            <p class="mb-4">
+                This stacked bar chart shows the composition of NEET (Not in Education, Employment, or Training) rates by sex (male/female) for selected European countries. Each bar is divided into sections representing the NEET rates for males and females, providing a clear comparison of gender differences in NEET rates across countries.
+            </p>
+        </div>
+        <div id="stacked-bar-chart" class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg"></div>
+    </main>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/stacked_bar_chart.js"></script>
+</body>
+</html>

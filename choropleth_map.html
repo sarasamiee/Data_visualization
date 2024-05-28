@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choropleth Map: NEET Rates in Europe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-purple-600 text-white p-4">
+        <h1 class="text-center text-3xl font-bold">Choropleth Map: NEET Rates in Europe</h1>
+    </header>
+    <nav class="bg-purple-400 text-white p-2">
+        <ul class="flex space-x-4 justify-center">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="bar_chart.html" class="hover:underline">Bar Chart</a></li>
+            <li><a href="line_chart.html" class="hover:underline">Line Chart</a></li>
+            <li><a href="scatter_plot.html" class="hover:underline">Scatter Plot</a></li>
+            <li><a href="stacked_bar_chart.html" class="hover:underline">Stacked Bar Chart</a></li>
+        </ul>
+    </nav>
+    <main class="p-4">
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-2xl font-bold mb-4">NEET Rates in Europe</h2>
+            <p class="mb-4">
+                This choropleth map provides a geographical representation of NEET (Not in Education, Employment, or Training) rates across Europe. Countries are colored based on their NEET rates, with darker colors representing higher rates. This visualization helps to quickly identify regional patterns and disparities in NEET rates across the continent.
+            </p>
+        </div>
+        <div id="choropleth-map" class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg"></div>
+    </main>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="js/choropleth_map.js"></script>
+</body>
+</html>

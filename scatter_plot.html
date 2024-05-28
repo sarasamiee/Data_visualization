@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scatter Plot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-purple-600 text-white p-4">
+        <h1 class="text-center text-3xl font-bold">Scatter Plot: NEET Rates and Youth Unemployment Rate</h1>
+    </header>
+    <nav class="bg-purple-400 text-white p-2">
+        <ul class="flex space-x-4 justify-center">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="bar_chart.html" class="hover:underline">Bar Chart</a></li>
+            <li><a href="line_chart.html" class="hover:underline">Line Chart</a></li>
+            <li><a href="choropleth_map.html" class="hover:underline">Choropleth Map</a></li>
+            <li><a href="stacked_bar_chart.html" class="hover:underline">Stacked Bar Chart</a></li>
+        </ul>
+    </nav>
+    <main class="p-4">
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-2xl font-bold mb-4">NEET Rates and Youth Unemployment Rate</h2>
+            <p class="mb-4">
+                This interactive scatter plot visualizes the relationship between NEET (Not in Education, Employment, or Training)
+                rates and Education Expenditure rates across various European countries from 2015 to 2022. Each point represents a
+                country in a specific year, indicating its NEET rate and Education Expenditure rate. Tooltips provide detailed
+                information about each data point on hover, including the year, country, sex, NEET rate, and education expenditure. 
+                The legend differentiates the years by color, enhancing the plot's readability and analysis. This chart helps explore
+                the correlation between NEET rates and education expenditure over time, and trend lines for each year highlight 
+                overall trends and patterns in the data.
+            </p>
+        </div>
+        <div id="scatter-plot" class="max-w-4xl mx-auto bg-white p-2 rounded-lg shadow-lg"></div>
+    </main>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/scatter_plot.js"></script>
+</body>
+</html>
